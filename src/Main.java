@@ -27,26 +27,33 @@ public class Main {
         boolean school = age1 >= 7 && age1 <= 17;
         boolean university = age1 >= 18 && age1 <= 24;
         boolean work = age1 > 24;
-        if (kindergarten)
+        if (kindergarten) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в детский сад");
-        if (school)
+        }
+        if (school) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в школу");
-        if (university)
+        }
+        if (university) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в университет");
-        if (work)
+        }
+        if (work) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить на работу");
+        }
         // Задача 5
         int age2 = 12;
         boolean сanNotRideTheRide = age2 < 5;
-        boolean canRideWithAnAdult = age2 > 5 && age2 < 14;
+        boolean canRideWithAnAdult = age2 >= 5 && age2 <= 14;
         boolean canRideWithoutAnAdult = age2 > 14;
-        if (сanNotRideTheRide)
+        if (сanNotRideTheRide) {
             System.out.println("Если возраст ребенка равен " + age2 + ", то ему нельзя кататься на аттракционе");
-        if (canRideWithAnAdult)
+        }
+        if (canRideWithAnAdult) {
             System.out.println("Если возраст ребенка равен " + age2 + ", можно кататься на аттракционе в сопровождении");
-        if (canRideWithoutAnAdult)
+        }
+        if (canRideWithoutAnAdult) {
             System.out.println("Если возраст ребенка равен " + age2 + ", можно кататься на аттракционе без сопровождения взрослого");
-        //Задача 6 не доделана пока
+        }
+            //Задача 6
         int seats1 = 103;
         int standingPlaces = 42;
         int seatingPositions = 60;
@@ -54,37 +61,33 @@ public class Main {
             System.out.println("В вагоне есть свободные места");
         } else {
             System.out.println("Вагон полностью забит");
-            int seats2 = 103;
-            if (seats2 < 60) {
+        }
+            int seats2 = 43;
+            if (seats2 < 60 && seats2 < 42) {
                 System.out.println("В вагоне есть свободные сидячие места");
             } else {
-                System.out.println("В вагоне нет свободных сидячих мест");
-                int seats3 = 41;
-                if (seats3 < 42) {
-                    System.out.println("В вагоне есть свободные стоячие места");
-                } else {
-                    System.out.println("В вагоне нет свободных стоячих мест");
-                }
-                // Задача 7
-                int one = 1;
-                int two = 2;
-                int three = 3;
-                if (one > two && one > three) {
-                    System.out.println(one);
-                } else {
-                    System.out.println(three);
-                }
-                if (two > three) {
-                    System.out.println(two);
-                } else {
-                    System.out.println(three);
+                System.out.println("В вагоне есть свободные только стоячие места");
+            }
+                    // Задача 7
+                    int one = 1;
+                    int two = 2;
+                    int three = 3;
+                    if (one > two) {
+                        System.out.println(one);
+                    } else if (two > three){
+                        System.out.println(two);
+                    } else {
+                        System.out.println(three);
+                    }
+
+
+
+
+                    }
                 }
 
 
-                }
-        }
-    }
-}
+
 
 
 
