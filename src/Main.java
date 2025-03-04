@@ -46,19 +46,42 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + age2 + ", можно кататься на аттракционе в сопровождении");
         if (canRideWithoutAnAdult)
             System.out.println("Если возраст ребенка равен " + age2 + ", можно кататься на аттракционе без сопровождения взрослого");
-    //Задача 6
-         int seats = 103;
-         boolean seatsInTheCarriage = seats > 102;
-
-         if (seatsInTheCarriage) {
-             System.out.println("Вагон полностью забит");
-         } else {
-             System.out.println("Вагон полностью забит");
-
-
-         }
+        //Задача 6 не доделана пока
+        int seats1 = 103;
+        int standingPlaces = 42;
+        int seatingPositions = 60;
+        if (seats1 <= 102) {
+            System.out.println("В вагоне есть свободные места");
+        } else {
+            System.out.println("Вагон полностью забит");
+            int seats2 = 103;
+            if (seats2 < 60) {
+                System.out.println("В вагоне есть свободные сидячие места");
+            } else {
+                System.out.println("В вагоне нет свободных сидячих мест");
+                int seats3 = 41;
+                if (seats3 < 42) {
+                    System.out.println("В вагоне есть свободные стоячие места");
+                } else {
+                    System.out.println("В вагоне нет свободных стоячих мест");
+                    //Задача 7
+                    int one = 1;
+                    int two = 2;
+                    int three = 3;
+                    boolean number = three > 2 && three > 1;
+                    if (number) {
+                        System.out.println("Это число больше");
+                    } else {
+                        System.out.println("Это число меньше");
+                    }
+                }
+            }
+        }
     }
-
-
 }
+
+
+
+
+
 
